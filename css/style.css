@@ -1,0 +1,605 @@
+/* Generale Setting */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto&display=swap");
+:root {
+  --font-green: rgb(28, 231, 131);
+  --font-grey: rgb(184, 185, 186);
+  --dark: rgb(0, 0, 0);
+  --white: rgb(252, 252, 252);
+  --dark-grey: rgb(21, 21, 22);
+  --light-grey: rgb(179, 179, 179);
+  --bg-light-grey: rgb(236, 238, 243);
+  --vh: rgb(41, 43, 44);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+}
+hr {
+  background-color: rgb(228, 223, 223);
+  border: 0;
+  height: 1px;
+  margin: 1rem 0;
+}
+/* special offer */
+.special-offer {
+  height: 75px;
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  align-items: center;
+  justify-content: center;
+  color: rgb(134, 141, 155);
+}
+.special-offer .special-offer-1,
+.special-offer .special-offer-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.special-offer .special-offer-2 {
+  justify-content: flex-end;
+}
+.special-offer .special-offer-1 p {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.special-offer .special-offer-1 p a {
+  display: inline-block;
+  text-decoration: underline;
+  color: inherit;
+}
+.special-offer .special-offer-2 p {
+  text-align: right;
+  cursor: pointer;
+  margin-right: 1rem;
+  font-size: 5rem;
+  line-height: 0.5;
+}
+/* header */
+header {
+  background-image: url("../img/homepage-masthead-test-desktop-3200x1320-v4c-6-16-20.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+}
+nav {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.001));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+nav a {
+  color: var(--white);
+  padding: 2rem 3.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+nav a:hover {
+  color: var(--font-grey);
+}
+/* try-up */
+.try-up {
+  margin: 3.4rem auto;
+  text-align: center;
+}
+.try-up p:nth-child(1) {
+  font-size: 0.8rem;
+  color: var(--font-green);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+.try-up h1 {
+  color: var(--font-green);
+  font-size: 8rem;
+  font-weight: 850;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+.try-up h4 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 0;
+  line-height: 0.9;
+}
+.try-up p:nth-child(4) {
+  padding: 0.7rem 0;
+}
+header button {
+  padding: 1.2rem 2rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  border: none;
+  cursor: pointer;
+}
+.try-up button:hover {
+  background-color: var(--font-grey);
+}
+.try-up p:last-child {
+  color: var(--light-grey);
+  font-size: 0.6rem;
+  line-height: 3;
+  letter-spacing: 0.42px;
+}
+.bundle {
+  background-color: rgba(0, 0, 0, 0.548);
+}
+.logos {
+  width: 350px;
+  margin: 1rem 3.5rem 1rem 0;
+}
+.logos img {
+  width: 100%;
+}
+.bundle-details p {
+  color: var(--font-green);
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin: 1.9rem 0 0.8rem 0;
+  letter-spacing: 1px;
+}
+.bundle-details h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+header a {
+  display: inline-block;
+  color: var(--font-grey);
+  text-decoration: underline;
+  font-size: 0.8rem;
+  margin: 0.7rem 0 2.2rem 0;
+}
+.get-bundle {
+  text-align: center;
+}
+.get-bundle button {
+  display: block;
+  border: 2px solid var(--white);
+  color: var(--white);
+  background-color: transparent;
+}
+.get-bundle button:hover {
+  border: 2px solid var(--light-grey);
+}
+.get-bundle a {
+  margin-bottom: 0;
+  font-size: 0.6rem;
+}
+/* included section */
+.included {
+  background-color: var(--dark);
+  text-align: center;
+  padding-top: 5rem;
+}
+.included p {
+  color: var(--font-green);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.included h1 {
+  color: var(--white);
+  font-size: 4.5rem;
+  font-weight: 1000;
+  word-spacing: -5px;
+  letter-spacing: 0.8px;
+  margin: 0 0 1.5rem 0;
+}
+.included h3 {
+  width: 800px;
+  color: var(--white);
+  margin: 0 auto;
+  font-size: 1.62rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+.included-tv-type {
+  width: 66%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: auto;
+  padding-bottom: 6.2rem;
+  gap: 10px 10px;
+  text-align: start;
+}
+.tv-shows,
+.movies,
+.hulu-originals,
+.premiums {
+  width: 294px;
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tv-shows {
+  background-image: url("../img/bobsburgers-category-tile-294x450-1x.jpg");
+}
+.movies {
+  background-image: url("../img/unitedstatesvsbillieholiday-category-tile-294x450-1x-1.jpg");
+}
+.hulu-originals {
+  background-image: url("../img/nine-perfect-strangers-category-poster-tile-294x450-2x.jpg");
+}
+.premiums {
+  background-image: url("../img/billions-category-poster-tile-v1-294x450-2x.jpg");
+}
+.included-tv-type p,
+.included-tv-type h2 {
+  color: var(--white);
+}
+.included-tv-type p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: none;
+  padding: 1.2rem 0 0 1.5rem;
+  margin: 0;
+}
+.included-tv-type h2 {
+  font-weight: 900;
+  padding: 0 0 0 1.5rem;
+  margin: 0;
+  line-height: 1;
+}
+.included-tv-type div:last-child p {
+  font-size: 0.65rem;
+  margin: 0.6rem 0 0 0;
+  padding: 0;
+  letter-spacing: normal;
+}
+/* section hulu live start */
+.hulu-live-tv {
+  background-color: var(--dark-grey);
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  color: var(--white);
+}
+.hulu-live-tv > div {
+  border: 4px solid var(--font-green);
+  border-radius: 17px;
+  padding: 6.5rem;
+}
+.hulu-live-tv p {
+  color: var(--font-green);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.hulu-live-tv h1 {
+  font-size: 4.7rem;
+  font-weight: 1000;
+  margin: 0;
+}
+.hulu-live-tv h3 {
+  width: 810px;
+  margin: 1.4rem auto 1rem;
+  font-size: 1.57rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.hulu-live-tv span {
+  display: block;
+  width: 1200px;
+  margin: 0 auto 1.4rem;
+  color: var(--font-grey);
+  font-size: 0.7rem;
+  line-height: 3.1;
+}
+.hulu-live-tv a {
+  color: var(--white);
+  text-decoration: underline;
+  display: block;
+}
+.hulu-live-tv > div button {
+  /* background-image: url("../img/blue-arrow-down-png-download-white-arrow-down-ico-11562889556udavijhnwl.png"); */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hulu-live-tv .chevron {
+  margin-top: 3rem;
+  animation: move-down 1s linear infinite alternate;
+  margin-bottom: 1rem;
+}
+@keyframes move-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(1rem);
+  }
+}
+/* section welcome tabs */
+#welcome-tabs {
+  background-image: url("../img/sports-v3-1600x850-min.full.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#welcome-tabs > div {
+  padding: 13rem 21rem;
+}
+#welcome-tabs ul {
+  padding: 0;
+}
+#welcome-tabs ul li {
+  display: inline-block;
+  margin-right: 1.8rem;
+}
+#welcome-tabs ul li a {
+  font-size: 12;
+  font-weight: 700;
+  color: var(--font-grey);
+  letter-spacing: 0;
+  padding-bottom: 1rem;
+}
+#welcome-tabs ul li a:active {
+  color: var(--white);
+  border-bottom: 8px solid var(--white);
+}
+#welcome-tabs h1 {
+  color: var(--white);
+  font-size: 4.7rem;
+  font-weight: 1000;
+  margin: 1rem 0 1rem;
+}
+#welcome-tabs div p::first-child {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+.welcome-tabs-desc {
+  color: var(--white);
+  font-size: 1.5rem;
+  width: 500px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.sports-networks-logo div {
+  display: inline-block;
+  background-color: var(--white);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+.sports-networks-logo div img {
+  width: 90%;
+  height: 50%;
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.welcome-tabs-details {
+  margin-top: 2rem;
+  color: rgb(228, 240, 234);
+  font-size: 0.6rem;
+  line-height: 3.1;
+}
+.welcome-tabs-details a {
+  color: rgb(228, 240, 234);
+  text-decoration: underline;
+}
+/* plan */
+.plan-container {
+  max-width: 1260px;
+  width: 66%;
+  margin: auto;
+}
+.plan-header {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.plan-header h2 {
+  color: var(--vh);
+  font-size: 1.8rem;
+  font-weight: 1000;
+}
+.plan-header p {
+  display: inline-block;
+  color: var(--white);
+  background-color: rgb(103, 114, 138);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.4rem 1.2rem;
+  border-radius: 16px;
+  /* text-align: center; */
+}
+.plan-header .plan-header-2 {
+  margin-left: 12.5%;
+}
+.plan-header .plan-header-3 {
+  text-align: center;
+}
+.plan-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 5px 20px;
+}
+
+.plan-grid-left .fees {
+  font-size: 1.08rem;
+  line-height: 1.6;
+  color: var(--dark);
+}
+.plan-grid-left .bold-text {
+  color: var(--vh);
+  font-weight: 900;
+}
+.plan-grid-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.plan-grid-left {
+  margin: auto 0;
+}
+.plan-grid-left p {
+  color: rgb(41, 44, 51);
+}
+.plan-grid-right h2 {
+  color: var(--vh);
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.plan-grid-right .trial-txt {
+  color: rgb(168, 164, 164);
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+.plan-grid-right button {
+  width: 90%;
+  height: 40px;
+  border: none;
+  color: var(--white);
+  background-color: var(--dark);
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.plan-grid-right .price {
+  font-size: 1.2rem;
+  color: rgb(41, 44, 51);
+  line-height: 1;
+}
+.check-mark {
+  font-size: 1.5rem;
+  color: var(--vh);
+}
+.horizontal-bar {
+  font-size: 1.5rem;
+  color: var(--light-grey);
+}
+.plan-disclaimer p {
+  font-size: 0.7rem;
+  line-height: 1.7;
+  color: var(--vh);
+  width: 670px;
+  margin-left: 1rem;
+}
+.plan-disclaimer p:last-child {
+  margin-bottom: 4rem;
+}
+.show-add-ons {
+  text-align: center;
+  margin: 2rem 0;
+}
+.show-add-ons a {
+  color: var(--vh);
+  font-size: 1.2rem;
+}
+.show-add-ons a i {
+  color: var(--light-grey);
+  font-size: 1.7rem;
+}
+/* footer */
+footer {
+  background-color: var(--bg-light-grey);
+}
+.footer-container {
+  width: 70%;
+  min-width: 950px;
+  margin: 0 auto;
+}
+.footer-header {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  padding: 2rem 0 0.7rem 0;
+  gap: 50px;
+}
+.footer-header h3 {
+  font-size: 0.85rem;
+  font-weight: bolder;
+  color: var(--vh);
+  margin-bottom: 0.6rem;
+}
+.footer-links-left {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+.footer-links-left ul li,
+.footer-links-middle ul li,
+.footer-links-right ul li {
+  margin-bottom: 0.4rem;
+}
+.footer-links-left ul li a,
+.footer-links-middle ul li a,
+.footer-links-right ul li a {
+  font-size: 0.85rem;
+  color: rgb(98, 99, 100);
+}
+.footer-links-left ul li a:hover,
+.footer-links-middle ul li a:hover,
+.footer-links-right ul li a:hover {
+  color: rgb(90, 145, 226);
+}
+.legal-links {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 90px;
+  flex-wrap: wrap;
+}
+.legal-links ul li {
+  display: inline-block;
+}
+.legal-links ul li a {
+  color: rgb(98, 99, 100);
+  margin-right: 1rem;
+}
+.legal-links-left ul li {
+  margin-right: 1rem;
+}
+.legal-links-right ul li {
+  margin-right: 0.7rem;
+}
+.legal-links-left ul li a {
+  font-size: 1.3rem;
+}
+.legal-links-right ul li a {
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+}
+.legal-links-right ul li a img {
+  vertical-align: middle;
+}
