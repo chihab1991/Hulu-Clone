@@ -319,7 +319,6 @@ header a {
   display: block;
 }
 .hulu-live-tv > div button {
-  /* background-image: url("../img/blue-arrow-down-png-download-white-arrow-down-ico-11562889556udavijhnwl.png"); */
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -417,12 +416,18 @@ header a {
   width: 66%;
   margin: auto;
 }
+.plan-select {
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  padding-top: 1rem;
+}
 .plan-header {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
-  /* justify-content: center; */
+
   align-items: center;
-  margin-top: 1.4rem;
+
   margin-bottom: 0.5rem;
 }
 .plan-header h2 {
@@ -439,7 +444,6 @@ header a {
   text-transform: uppercase;
   padding: 0.4rem 1.2rem;
   border-radius: 16px;
-  /* text-align: center; */
 }
 .plan-header .plan-header-2 {
   margin-left: 12.5%;
@@ -575,7 +579,6 @@ footer {
 }
 .legal-links {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   height: 90px;
   flex-wrap: wrap;
